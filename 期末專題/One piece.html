@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    ul.nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      text-align: center;
+    }
+      
+    ul.nav li {
+      display: inline-block;
+    }
+      
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.nav li a:hover {
+      background-color: #111;
+    }
+
+    @media (max-width: 768px) {
+      /* 在移動設備上的樣式 */
+      .nav {
+        background-color: #2ca8fe; /* 更改Menu的背景颜色 */
+      }
+      .nav .nav-link {
+        color: #fff; /* 更改Menu的文字颜色 */
+      }
+    }
+    
+    .image-container {
+      max-height: 350px; /* 設置圖像容器的最大高度 */
+      overflow: auto; /* 隐藏滾動條 */
+    }
+
+    .image-container::-webkit-scrollbar {
+      width: 0; /* 隐藏滾動條 */
+    }
+
+    .image-container::-webkit-scrollbar-track {
+      background-color: transparent; /* 設置滾動條背景顏色為透明 */
+    }
+
+    .image-container::-webkit-scrollbar-thumb {
+      background-color: transparent; /* 設置滾動條拇指顏色為透明 */
+    }
+
+    .image-container img {
+      max-width: 100%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>期末專題 - 海賊王</title>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">故事情節</a></li>
+    <li><a href="#">人物介紹</a></li>
+    <li><a href="#">能力介紹</a></li>
+  </ul>
+  <div class="image-container">
+    <img src="../期末專題/img/title.jpg">
+  </div>
+</body>
+</html>

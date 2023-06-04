@@ -1,0 +1,84 @@
+.navbar-nav li.nav-item {
+    width: 120px; /* 設定導航項目的寬度 */
+    text-align: center;
+}
+  
+.navbar-nav li.nav-item a:hover {
+    background-color: #111; /* 滑鼠移過時的背景顏色 */
+}
+
+.dropdown-menu a.dropdown-item {
+    color: gray; /* 設定項目的文字顏色 */
+}
+  
+.dropdown-menu a.dropdown-item:hover {
+    color: white; /* 滑鼠移過時的文字顏色 */
+}
+
+.image-container {
+    max-height: 400px; /* 設置圖像容器的最大高度 */
+    overflow: auto; /* 隐藏滾動條 */
+}
+
+.image-container::-webkit-scrollbar {
+    width: 0; /* 隐藏滾動條 */
+}
+
+.image-container::-webkit-scrollbar-track {
+    background-color: transparent; /* 設置滾動條背景顏色為透明 */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* 設置滾動條拇指顏色為透明 */
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.row img {
+    width: 45%;
+    height: auto;
+    float: right;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.container img.D:hover {
+    transform: scale(1.05); /* 放大圖像 */
+}
+
+.carousel-control-prev-icon {
+    color: gray !important;
+}
+
+.carousel-control-next-icon {
+    color: gray !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* 圖片容器 RWD 調整 */
+    .image-container {
+        max-width: 100%;
+        max-height: 150px;
+        background-size: cover;
+    }
+
+    .navbar-nav li.nav-item {
+        text-align: left;
+    }
+
+    .carousel-control-prev-icon {
+        background-color: transparent;
+    }
+      
+    .carousel-control-next-icon {
+        background-color: transparent;
+    }
+}

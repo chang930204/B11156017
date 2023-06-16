@@ -38,7 +38,6 @@
 
 h1 {
     padding-top: 50px;
-    text-align: center;
 }
 
 .row img {
@@ -49,16 +48,13 @@ h1 {
     align-items: center;
 }
 
+.container img.D {
+    opacity: 0.5; /* 降低透明度 */
+}
+
 .container img.D:hover {
-    transform: scale(1.05); /* 放大圖像 */
-}
-
-.carousel-control-prev-icon {
-    color: gray !important;
-}
-
-.carousel-control-next-icon {
-    color: gray !important;
+    opacity: 1; /* 降低透明度 */
+    transform: rotate(-3deg); /* 旋轉圖片 */
 }
 
 .scroll-to-top {
@@ -76,7 +72,6 @@ h1 {
     line-height: 50px;
     cursor: pointer;
 }
-
 
 @media screen and (max-width: 768px) {
     /* 圖片容器 RWD 調整 */
@@ -96,24 +91,5 @@ h1 {
     
     .carousel-control-next-icon {
         background-color: transparent;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        opacity: 0 !important; /* 設置透明度為0 */
-        pointer-events: none; /* 禁用箭頭的互動事件 */
-    }
-
-    .col-12 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .col-12 img {
-        width: 100%; /* 調整圖片的寬度 */
-    }
-    
-    .col-md-6 {
-        padding-top: 15px; /* 調整上方留白 */
     }
 }
